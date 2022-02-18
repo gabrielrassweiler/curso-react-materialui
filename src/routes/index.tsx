@@ -5,7 +5,8 @@ export const Routes = () => {
   return (
     <BrowserRouter>
       <RoutesApp>
-        <Route path="/" element={<Button>Button</Button>}/>
+        {/* Contained = deixa o botao preenchido e nao transparente */}
+        <Route path="/" element={<Button variant="contained">Button</Button>}/>
         <Route path="*" element={<Navigate to="/"/>}/>
       </RoutesApp>
     </BrowserRouter>
